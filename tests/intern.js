@@ -11,8 +11,7 @@ define({
         { browserName: 'firefox',           version: '28', platform: [ 'MAC', 'WINDOWS' ] },
         { browserName: 'chrome',            version: '34', platform: [ 'MAC', 'WINDOWS' ] },
         { browserName: 'safari',            version: '6',  platform: 'MAC' },
-        { browserName: 'safari',            version: '7',  platform: 'MAC' },
-        { browserName: 'safari',            version: '8',  platform: 'MAC' }
+        { browserName: 'safari',            version: '7',  platform: 'MAC' }
     ],
     maxConcurrency: 2,
     tunnel: 'BrowserStackTunnel',
