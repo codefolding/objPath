@@ -1,5 +1,7 @@
 /*global define*/
-define(function () {
+if (typeof define === 'undefined') { define = function(init) { var r = function () {}, e = this, m = {}; if (this.require) { r = require; e = exports; m = module; } init(r, e, m); if (m.exports) { this.pathly = m.exports; }}; }
+
+define(function (require, exports, module) {
     'use strict';
 
     function compress(a) {
@@ -48,5 +50,5 @@ define(function () {
         }
     }
 
-    return run;
+    module.exports = run;
 });
