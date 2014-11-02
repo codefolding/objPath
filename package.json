@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/codefolding/pathly",
   "devDependencies": {
-    "intern-geezer": "^2.1.1"
+    "intern-geezer": "2.0.3"
   }
 }
