@@ -1,0 +1,28 @@
+{
+  "name": "pathly",
+  "version": "0.0.1",
+  "description": "Construct javascript objects from strings",
+  "main": "pathly.js",
+  "scripts": {
+    "test": "intern-runner --config=tests/intern"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codefolding/pathly.git"
+  },
+  "keywords": [
+    "obj",
+    "json",
+    "path",
+    "parse"
+  ],
+  "author": "Marcus Zanona <zanona@me.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codefolding/pathly/issues"
+  },
+  "homepage": "https://github.com/codefolding/pathly",
+  "devDependencies": {
+    "intern-geezer": "^2.1.1"
+  }
+}
