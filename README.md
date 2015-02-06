@@ -27,7 +27,7 @@ And a simple Javascript function that would run through all fields and add those
 
 ```js
 var holder = {};
-$('form [name]').each(function (e) { pathly(holder, e.target.name, $(e.target).val()); });
+$('form [name]').each(function (el) { pathly(holder, el.name, $(el).val()); });
 // holder object inheriting all parameters defined on the form.
 ```
 
