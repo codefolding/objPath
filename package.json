@@ -1,6 +1,6 @@
 {
   "name": "pathly",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Construct javascript objects from strings",
   "main": "pathly.js",
   "scripts": {
