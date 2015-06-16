@@ -1,7 +1,4 @@
-/*global define*/
-if (typeof define === 'undefined') { define = function(init) { var r = function () {}, e = this, m = {}; if (this.require) { r = require; e = exports; m = module; } init(r, e, m); if (m.exports) { this.pathly = m.exports; }}; }
-
-define(function (require, exports, module) {
+(function () {
     'use strict';
 
     function compress(a) {
@@ -27,7 +24,7 @@ define(function (require, exports, module) {
         return a.join ? compress(a) : a;
     }
 
-    function run(obj, path, value, opts) {
+    function main(obj, path, value, opts) {
         var tempObj,
             key;
 
@@ -50,5 +47,16 @@ define(function (require, exports, module) {
         }
     }
 
-    module.exports = run;
-});
+    function init() {
+        /*global define, module*/
+        if (typeof define === 'function' && define.amd) {
+            define(function () { return main; });
+        } else if (typeof module === 'object' && module.exports) {
+            module.exports = main;
+        } else {
+            this.pathly = main;
+        }
+    }
+
+    init();
+}());
