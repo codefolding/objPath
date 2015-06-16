@@ -1,0 +1,11 @@
+{
+  "name": "pathly",
+  "description": "Construct javascript objects from strings",
+  "authors": [
+    "Marcus Zanona <zanona@me.com>"
+  ],
+  "version": "0.1.0",
+  "main": [
+    "pathly.js"
+  ]
+}
