@@ -27,9 +27,12 @@
     function main(obj, path, value, opts) {
         var tempObj,
             key,
-            delimiter = (opts && opts.delimiter) || '.';
+            delimiter = (opts && opts.delimiter) || '.',
+            emptyKey  = (opts && opts.emptyKey) || 'undefined';
 
         path = path.replace(/\[(\d)\]/g, '.$1').split(delimiter);
+        //replace empty keys with `emptyKey`
+        path = path.map(function (item) { return item || emptyKey; });
 
         while (key = path.pop()) {
             tempObj = isNaN(key) ? {} : [];
